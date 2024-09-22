@@ -1,3 +1,23 @@
+<h1 align="center">Hexagonal Architecture</h1>
+
+<h4 align="center">
+  <a href="#tecnologies">Tecnologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#observations">Observations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#building">Building</a>
+</h4>
+
+## Tecnologies
+This project was developed using the following technologies:
+- [Spring Boot]()
+- [Spring Data MongoDB]()
+- [Lombok]()
+- [MongoDB]()
+- [Spring Validation]()
+- [Kafka]()
+- [Map Struct]()
+
+## Observations
+
 ### Portuguese
 
 ```
@@ -40,4 +60,15 @@ Ports/Out -> Output ports to leave the CORE
 Adapters are the implementations of input and output ports
 Adapters/In -> Input means in the application, whether by controller, queue/messaging, script, etc
 Adapters/Out -> Output means of the application, whether to access a database, call another API, etc
+```
+
+## Building
+You'll need [Java 17+](https://www.oracle.com/br/java/technologies/javase-jdk17-downloads.html) and [Maven](https://maven.apache.org/download.cgi) installed on your computer in order to build this app.
+
+```bash
+$ git clone https://github.com/eric-souzams/spring-hexagonal-architecture.git
+$ cd spring-hexagonal-architecture
+
+$ mvn clean install -DskipTests
+$ mvn spring-boot:run
 ```
