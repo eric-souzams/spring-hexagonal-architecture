@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hexagonal
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/hexagonal-arc
+
+external:
+  client:
+    address:
+      url: http://localhost:9090/search/zip-code
